@@ -5,4 +5,4 @@ kolayca yönetilebilecek. Ulaşım hizmetleri kullanıcıları ise kart taşıma
 zorunda kalmayacaklardır.
 
 These Notebooks Use php Language Withe Laravel Framewok As Backend.
-And html,CSS and javascript As frontend.
+And html,CSS and javascript As Frontend.
