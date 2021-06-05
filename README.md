@@ -4,4 +4,5 @@ UlaşımKartSistemi’nin hedefi Türkiye’deki şehir içi ulaşım sistemleri
 kolayca yönetilebilecek. Ulaşım hizmetleri kullanıcıları ise kart taşımak zorunda kalmayacaklar, kart hesaplarını kolayca  yönetebilecek ve indirimli ulaşım için beklemek 
 zorunda kalmayacaklardır.
 
-These Notebooks Use php Language Withe Laravel Framewok
+These Notebooks Use php Language Withe Laravel Framewok As Backend.
+And html,CSS and javascript As frontend.
