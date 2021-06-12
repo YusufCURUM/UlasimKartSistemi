@@ -1,0 +1,65 @@
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/foundation.dart';
+
+enum Complexity {
+  Simple,
+  Challenging,
+  Hard,
+}
+enum Affordability {
+  Affordable,
+  pricey,
+  luxurious,
+}
+
+class Trips {
+  final String id;
+  final List<String> categories;
+  final String title;
+  final String imageUrl;
+  final List<String> ingrediens;
+  final List<String> steps;
+  final int duration;
+  final Complexity complexity;
+  final Affordability affrodability;
+
+  final bool isgluteenfree;
+
+  final bool islactosfree;
+
+  final bool isVegan;
+
+  final bool vegetrian;
+
+
+  Trips({this.id,
+    @required this.categories,
+    @required this.title,
+    @required this.imageUrl,
+    @required this.ingrediens,
+    @required this.steps,
+    @required this.duration,
+    @required this.complexity,
+    @required this.affrodability,
+    @required this.isgluteenfree,
+    @required this.islactosfree,
+    @required this.isVegan,
+    @required this.vegetrian,
+  });
+
+
+}
+
+Meal m1 = Trips(
+  categories: null,
+  title: null,
+  imageUrl: null,
+  ingrediens: null,
+  steps: null,
+  duration: null,
+  complexity:Complexity.Simple ,
+  affrodability: null,
+  isgluteenfree: null,
+  islactosfree: null,
+  isVegan: null,
+  vegetrian: null,);
