@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Style.css">
+
+    </head>
+    <body>
+
+    <h2>UKS</h2>
+    <p>UlaşımKartSistemi-Elazig</p>
+
+    <div class="row">
+        <div class="left" style="background-color:#bbb;">
+            <h2>Ana Sayfa</h2>
+            <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+            <ul id="myMenu">
+                <li><a href="CASE-11.html">Hatlar</a></li>
+                <li><a href="#">Ücretler</a></li>
+                <li><a href="#">Araçlar</a></li>
+                <li><a href="#">Duraklar</a></li>
+                <li><a href="#">Kartlar</a></li>
+                <li><a href="#">Kullanıcılar</a></li>
+                <li><a href="#">Geri Bildirimler</a></li>
+            </ul>
+        </div>
+
+        <div class="right" style="background-color:#ddd;">
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Kullanıcılar</h5>
+                            <p class="card-text">Bugün  -  55,22</p>
+                            <a href="#" class="btn btn-primary">
+                                <button type="button" class="btn btn-success">Detaylar</button></a>
+                        </div>
+                    </div>
+                </div>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Seferler</h5>
+                            <p class="card-text">Bugün  -  55,22</p>
+                            <a href="#" class="btn btn-primary">
+                                <button type="button" class="btn btn-success">Detaylar</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br><br><br><br>
+            <div class="card text-center">
+                <div class="card-header">
+                    Son işlemler
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">Giriş yaptınız</h5>
+                    <h5 class="card-title">Güzergah eklendi</h5>
+                    <h5 class="card-title">Durak Düzenlendi</h5>
+                </div>
+                <div class="card-footer text-muted">
+                    2 days ago
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script>
+        function myFunction() {
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("mySearch");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myMenu");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+
+    </body>
+    </html>
+
